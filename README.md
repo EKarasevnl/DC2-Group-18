@@ -12,6 +12,24 @@
 
 'Copy of hou01tables2021.xlsx': Household data for the UK.
 
+'fractions.xlsx': Percentages of points of interest (POI) per LSOA.
+
+'Burglaries folder': Contains 13 .xlsx files containing yearly aggregated burglary data per LSOA as well as the POI's per LSOA.
+
+'Burglaries_coords folder': Contains 13 .xlsx files containing yearly aggregated burglary coordinates.
+
+## Model RTM.ipynb
+
+### Functionality
+
+Data Loading: The code reads the POI data ('granular_pois.csv') and Burglary coordinates ('Burglaries_coords folder')
+
+### Usage
+
+Ensure that the folder containing the required data files is present in the same directory as the code file.
+
+Install the necessary dependencies (pandas and numpy).
+
 ## POI analysis.ipynb
 
 ### Functionality
@@ -30,11 +48,41 @@ groceries, and cafes) are marked on the map as circle markers.
 
 ### Usage
 
-Ensure that the required data files (granular_pois.csv, barnet.csv, and barnet.geojson) are present in the same directory as this code file.
+Ensure that the folder containing the required data files is present in the same directory as the code file.
 
 Install the necessary dependencies (pandas, geopandas, and folium).
 
 Run the code to perform the data analysis and generate the map.
+
+## POI.ipynb
+
+### Functionality
+
+Data Loading: The code reads the percentages of POI's ('fractions.xlsx') and yearly aggregated burglary data ('Burglaries folder').
+
+### Usage
+
+Ensure that the folder containing the required data files is present in the same directory as the code file.
+
+Install the necessary dependencies (pandas, numpy, matplotlib, glob, os, seaborn and sklearn).
+
+Run the code to perform the POI analysis.
+
+## api-calls.ipynb
+
+### Functionality
+
+Data scraping: The code scrapes POI's from Google Maps in the Barnet region
+
+Exporting: The code stores the scraped data into a pandas DataFrame and save this file as 'poi-gmaps-api.csv'
+
+### Usage
+
+Ensure that a Google API key is provided and input in the variable 'API_KEY' at the very beginning of the file.
+
+Install the necessary dependencies (pandas and googlemaps).
+
+Run the code to perform the scraping and generate the POI file.
 
 ## random_forest.ipynb
 
@@ -50,7 +98,7 @@ Visualization: The code generates an interactive map using folium. It includes a
 
 ### Usage
 
-Ensure that the required data files (barnet.csv, barnet.geojson, hou01tables2021.xlsx, sunlight_updated.csv).
+Ensure that the folder containing the required data files is present in the same directory as the code file.
 
 Install the necessary dependencies (pandas, geopandas, matplotlib, folium, geojson, xgboost, shapely, scikit-learn, numpy).
 
