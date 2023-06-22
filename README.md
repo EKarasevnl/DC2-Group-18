@@ -24,6 +24,8 @@
 
 Data Loading: The code reads the POI data ('granular_pois.csv') and Burglary coordinates ('Burglaries_coords folder')
 
+Aggregation: Links the POI dataset to the burglary datasets
+
 ### Usage
 
 Ensure that the folder containing the required data files is present in the same directory as the code file.
