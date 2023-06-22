@@ -60,6 +60,10 @@ Run the code to perform the data analysis and generate the map.
 
 Data Loading: The code reads the percentages of POI's ('fractions.xlsx') and yearly aggregated burglary data ('Burglaries folder').
 
+Scaling: The code scales and pre-processes the data
+
+Creating heatmaps: The code creates heatmaps showing the stats for LSOA's
+
 ### Usage
 
 Ensure that the folder containing the required data files is present in the same directory as the code file.
